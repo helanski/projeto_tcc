@@ -1,0 +1,72 @@
+/* Ajustando o layout dos inputs */
+.form-control {
+    width: 240px; 
+  }
+  
+  /* Exibindo os inputs lado a lado */
+  #desempenhoForm .mb-3 {
+    display: inline-block;
+    margin-right: 25px;
+  }
+  
+  /* Centralizando o formulário e fazendo ajustes no espaçamento */
+  #desempenhoForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  /* Linha separadora entre os campos e a tabela */
+  .separator {
+    border-top: 2px solid #ddd; /* Linha fina */
+    margin: 20px 0px; /* Espaçamento antes e depois da linha */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Ajustes para a tabela */
+  .table {
+    font-size: 0.9rem; /* Reduzir o tamanho da fonte da tabela */
+    text-align: center;
+  }
+
+  /* Ajustar o tamanho da fonte das células da tabela */
+.table td, .table th {
+    font-size: 0.85rem; /* Reduzir o tamanho da fonte */
+  }
+  
+  /* Ajustar a largura das colunas */
+  .table th, .table td {
+    padding: 0.5rem; /* Menos preenchimento para as células */
+  }
+  
+  .table th {
+    width: 20%; /* Ajustar a largura das colunas de cabeçalho */
+  }
+  
+  .table td {
+    width: 20%; /* Ajustar a largura das colunas de dados */
+  }
+  
+  /* Ajustes gerais */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  /* Remove a cor azul e o sublinhado dos links */
+a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Faz com que a cor do link herde a cor do texto ao invés de ser azul */
+}
+
+a:hover, a:focus {
+  text-decoration: none; /* Remove o sublinhado no hover */
+  color: inherit; /* Mantém a cor do texto no hover */
+}

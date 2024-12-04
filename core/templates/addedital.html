@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Editais</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/core/css/base.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</head>
+
+<style>
+  .container-fluid {
+    background-color: #141414;
+}
+</style>
+<body>
+
+    <!-- Menu Lateral -->
+    <div class="sidebar text-white">
+      <h4 class="text-center text-white">MENU</h4>
+      <a href="/base/">Inicio</a>
+      <a href="/addedital/">Editais</a>
+      </div>
+
+  <!-- Background Image with Text Overlay -->
+  <div class="bg-image">
+    <div class="mask">
+    </div>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <div class="content">
+  <!-- Cabeçalho -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <p class="navbar-brand d-flex align-items-center">Cadastro de Editais</p>
+      </div>
+    </nav>
+
+    <!-- Container principal -->
+    <div class="container mt-4">
+      <!-- Formulário para adicionar dados do edital -->
+      <div class="row mb-3">
+        <div class="col-md-8">
+          <input type="text" id="titleInput" class="form-control" placeholder="Titulo do Edital">
+        </div>
+        <div class="col-md-4">
+          <button id="addButton" class="btn btn-dark w-100">Adicionar Edital</button>
+        </div>
+      </div>
+
+      <!-- Tabela para listar os editais -->
+      <table class="table table-striped mt-4">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Titulo</th>
+            <th>Acoes</th>
+          </tr>
+        </thead>
+        <tbody id="editaisList"></tbody>
+      </table>
+    </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/core/js/addedital.js"></script>
+</body>
+</html>
