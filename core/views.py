@@ -42,3 +42,22 @@ def serve_desempenho(request):
 
 # FORMULÁRIOS
 
+# cadastro de tarefas
+from .models import Tarefa
+from .forms import TarefaForm
+
+def base(request):
+    if request.method == 'POST':
+        form = TarefaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('base')  # Redireciona para a própria página após salvar
+    else:
+        form = TarefaForm()
+
+    # Recupera todas as tarefas para exibir na tabela
+    tarefas = Tarefa.objects.all()
+    return render(request, 'base.html', {'form': form, 'tarefas': tarefas})
+
+
+
