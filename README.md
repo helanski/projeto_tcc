@@ -1,0 +1,1 @@
+Repositório dedicado para armazenamento dos programas desenvolvidos no Trabalho de Conclusão de Curso "CONSTRUÇÃO DE WEBSITE PARA PLANEJAMENTO E GESTÃO DE ATIVIDADES DEDICADAS À PREPARAÇÃO PRÉ-VESTIBULAR UTILIZANDO O FRAMEWORK DJANGO"
